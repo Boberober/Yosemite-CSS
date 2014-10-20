@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  margin: 0; }
+
+body {
+  font-family: 'Lato';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  font-weight: 300;
+  color: #333; }
+
+label {
+  margin-bottom: 10px; }
+
+h1 {
+  font-weight: 300; }
+
+.container {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  min-height: 250px;
+  -webkit-animation: fade-in 1s; }
+
+a {
+  color: #08c;
+  text-decoration: none; }
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #08c;
+  -webkit-transition: all 0.25s;
+          transition: all 0.25s; }
+  .button:hover {
+    border-bottom: 1px solid;
+    padding-bottom: 0; }
+  .button:after {
+    content: ">";
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    top: 1px; }
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+
+  to {
+    opacity: 1; } }
+
+label {
+  display: block; }
+
+.apple-radio {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-right: 3px;
+  border-radius: 100%;
+  position: relative;
+  top: 2px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.25s all;
+          transition: 0.25s all;
+  box-shadow: inset 0 2px 2px -2px #888, 0.5px 0.5px 0 #bebebe, -0.5px 0.5px 0 #bebebe, 0.5px -0.5px 0 #bebebe, -0.5px -0.5px #bebebe; }
+  .apple-radio:active {
+    background: #f0f0f0;
+    border: 1px solid #b1bcc7;
+    box-shadow: inset 0 2px 2px -2px #888;
+    box-shadow: 0.5px 0.5px 0 #b1bcc7, -0.5px 0.5px 0 #b1bcc7, 0.5px -0.5px 0 #b1bcc7, -0.5px -0.5px #b1bcc7; }
+  .apple-radio.active {
+    background: #3b99fc;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0), 0.5px 0.5px 0 #2f93fc, -0.5px 0.5px 0 #2f93fc, 0.5px -0.5px 0 #2f93fc, -0.5px -0.5px #2f93fc;
+    position: relative;
+    border: 1px solid #3b99fc; }
+    .apple-radio.active:after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      background: white;
+      border-radius: 16px;
+      display: inline-block;
+      text-align: center;
+      position: absolute;
+      box-shadow: 0 1px 1px #1b79dc;
+      left: 4px;
+      top: 4px;
+      -webkit-animation: inner-circle 0.25s; }
+    .apple-radio.active:active {
+      border: 1px solid #b1bcc7;
+      border-color: #0972e1;
+      background: #0a7ffb;
+      box-shadow: inset 0 2px 2px -2px #888, 0.5px 0.5px 0 #2f93fc, -0.5px 0.5px 0 #2f93fc, 0.5px -0.5px 0 #2f93fc, -0.5px -0.5px #2f93fc; }
+
+@-webkit-keyframes inner-circle {
+  from {
+    /* border-radius: 16px; */
+    -webkit-transform: scale(3);
+    /* box-shadow: 0 1px 1px #1b79dc; */
+    /* $box-shadow-color: rgba(0,0,0,0); */
+    box-shadow: none; }
+
+  to {
+    -webkit-transform: scale(1);
+    width: 4px;
+    height: 4px;
+    left: 4px;
+    top: 4px;
+    box-shadow: 0 1px 1px #1b79dc; } }

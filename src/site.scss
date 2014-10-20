@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: 'Lato';
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: 300;
+  color: #333;
+}
+label {
+  margin-bottom: 10px;
+}
+h1 {
+  font-weight: 300;
+}
+.container {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  align-self: center;
+  min-height: 250px;
+  -webkit-animation: fade-in 1s;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+
+  &:hover {
+
+  }
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #08c;
+  transition: all .25s;
+  &:hover {
+    border-bottom: 1px solid;
+    padding-bottom: 0;
+  }
+  &:after {
+      content: ">";
+      display: inline-block;
+      margin-left: 5px;
+      position: relative;
+      top: 1px;
+  }
+}
+
+@-webkit-keyframes fade-in{
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@import 'radio';
